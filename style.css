@@ -1,0 +1,122 @@
+* {
+  margin: 0; /* margem*/
+  padding: 0; /* preenchimento interno */
+  box-sizing: border-box; /* medida da largura da caixa*/
+}
+
+body {
+  background-color: #09090A;
+  color: white;
+}
+
+header{
+  display: flex; /*flexibilidade, ou seja, os itens se organizam um do lado do outro, mas da pra configurar */
+ align-items: center;/* alinha horizontalmente*/
+ justify-content: space-between; /* bota espaço entre os elementos*/
+ 
+ padding: 48px; /* quando só bota um valor, da espaço horizontalmente e verticalmente*/
+
+ position: fixed;/* fixa a posição*/
+ width: 100%;
+ background-color: #09090A;
+ 
+}
+
+button{
+ padding: 16px 24px;/* preenchimento interno */
+ border-radius: 8px; /* arredondamento da borda */
+ border: 1px solid #8B5CF6; /* tamanho , como quer(sólido, pontilhado,etc) e cor da borda */
+ background-color: transparent;
+color: white;
+
+display: flex;
+align-items: center;
+gap: 12px;/* espaçamento entre os elementos , nesse caso, entre o sinal de mais e a frase */
+
+font-family: 'Inter';
+font-weight: 600; /* espessura da fonte */
+font-size: 16px; /* tamanho da fonte */
+line-height: 125%; /* Altura da linha */
+}
+
+#form-habits{
+  display: flex;
+
+  padding: 182px 48px 48px; /* cima, laterais , em baixo*/
+  width: fit-content;/* fit-content= encaixe o conteúdo na largura */
+}
+
+.habits{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+}
+
+.habit{ 
+  width: 64px;
+  height: 64px;
+  
+  font-size:32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.days{
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+  
+}
+
+.day{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;/*direção do flex*/
+}
+
+.day div{
+  margin-bottom: 8px;
+  color: #A1A1AA;
+  font-size: 20px;
+  font-family: 'Roboto Mono';
+  line-height: 125%;
+  
+  text-align: center;
+}
+
+input{
+  appearance: none;
+  -webkit-appearance: none;
+
+
+  width: 64px;
+ height: 64px;
+ 
+ border: 2px solid #27272A;
+ border-radius: 8px;
+ background-color: #18181B;
+}
+
+/*pseudo-selector*/
+input:checked{
+
+  width: 64px;
+  height: 64px;
+
+ 
+   border: 2px solid #A78BFA;
+ border-radius: 8px;
+ background-color: #8B5CF6;
+}
+
+@media (max-width: 570px){ /* para qnd a tela tiver pequena(celular como exemplo), tirar o "registrar meu dia" e deixar só o sinal de + */
+  button div{
+    display:none
+  }
+}
