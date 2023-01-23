@@ -32,6 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Habits é um app para ajudar a rastrear os hábitos.
 
+-[Visite o projeto online](htpps://brunapinna.github.io/nlw_setup)
 
 ## 🔖 Layout
 
